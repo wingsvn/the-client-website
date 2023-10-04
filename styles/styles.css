@@ -353,7 +353,59 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
-/* css voor mijn reserveringen */
-main {
-    display:grid;
+/* css voor mijn uitleningen: mobiele versie */
+main{
+    width: 90%;
+    margin: 0 auto;
+
+    /*background-color: green;*/
 }
+
+main h1 {
+    margin-bottom: 1rem;
+}
+
+article {
+    /*background-color: yellow;*/
+}
+
+article img {
+    width: 22rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+article h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color:
+}
+
+article h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+article h5 {
+    margin-bottom: 5rem;
+}
+
+/* desktop versie*/
+@media screen and (min-width: 800px) {
+    article img {
+        width: 10rem;
+        height: auto;
+    }
+    article h3 {
+        font-size: 1rem;
+    }
+
+    article h4 {
+        font-size: 1rem;
+    }
+}
+
+
+
