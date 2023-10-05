@@ -377,16 +377,15 @@ article {
     /*background-color: yellow;*/
     width: 90%;
     margin: 0 auto;
-
-   display: grid;
+    display: grid;
     grid-template-areas: 
         "image image"
         "title title"
-        "text text"
+        "description description"
         "date button"
         "days button";
-    grid-template-columns: 2fr 0.5fr;
-    grid-template-rows: 2fr 0.2fr 0.5fr 2.5rem 1.5rem;
+    grid-template-columns: 5fr 0.5fr;
+    grid-template-rows: 2fr 0.2fr 0.5fr 2.5rem 1rem;
 }
 
 article img {
@@ -395,34 +394,27 @@ article img {
     display: block;
     margin: 0 auto;
     margin-top: 5rem;
-
     grid-area: image;
 }
 
 article h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-
     grid-area: title;
 }
 
 article p {
-    /*color:#707070;
-    width: 29rem; 
-    height: 7rem;*/
-    grid-area: text
-    
+    color:#707070;
+    grid-area: description;
 }
 article h4 {
     margin-top: 1em;
     margin-bottom: 1em;
-
     grid-area: date;
 }
 
 article h5 {
     color:#FF0000;
-
     grid-area: days;
 }
 
@@ -433,16 +425,114 @@ article button {
     background-color: red;
     color: white;
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 1rem;
     float: right;
-
     grid-area: button;
 }
 
 
 
 /* mid-sized versie*/
-@media screen and (min-width: 45em) {
+@media screen and (min-width:45em) {
+    article {
+       /* background-color:pink; */
+        display: grid;
+        grid-template-areas: 
+        "image image title title"
+        "image image description description"
+        "date date date button"
+        "days days days button";
+        grid-template-columns: 1fr 0.5fr 1fr 7rem;
+        grid-template-rows: 0.5fr 1fr 2.5rem 1rem;
+    }
+
+    article image {
+        width: 1rem;
+        height: auto;
+        margin-top: 5rem;
+        grid-area: image;
+    }
+
+    article h3 {
+        margin-top: 5rem;
+        margin-left: 0.5rem;
+        grid-area: title;
+    }
+    
+    article p {
+        margin-left: 0.5rem;
+        grid-area: description;
+    }
+
+    article h4{
+        margin-top: 1rem;
+        grid-area: date;
+    }
+
+    article h5 {
+        grid-area: days;
+    }
+}
+
+
+
+@media screen and (min-width: 55rem){
+    article {
+        background-color:;
+        width: 42%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+            "image image"
+            "title title"
+            "description description"
+            "date button"
+            "days button";
+        grid-template-columns: 6fr 0.5fr;
+        grid-template-rows: 2fr 0.2fr 0.5fr 2.5rem 1rem;
+    }
+    
+    article img {
+        width: 15rem;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5rem;
+        grid-area: image;
+    }
+    
+    article h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        grid-area: title;
+    }
+    
+    article p {
+        grid-area: description;
+    }
+    article h4 {
+        grid-area: date;
+    }
+    
+    article h5 {
+        grid-area: days;
+    }
+    
+    article button {
+        grid-area: button;
+    }
+
+    article:nth-of-type(1n){
+        float:left;
+        margin: 1rem;
+    }
+
+    article:nth-of-type(2n){
+        float: right;
+    }
+}
+
+/*@media screen and (min-width: 45em) {
     article{
         width: 40%;
     }
@@ -456,7 +546,7 @@ article button {
     }
 
     /*article:nth-of-type(3n){
-        float: right;*/
+        float: right;
     }
 
     article img {
@@ -470,11 +560,10 @@ article button {
 
     article p {
         color:#707070;
-        /*
         width: 20rem; 
         height: 10rem;
-        */
     }
+        
 
     article h4 {
         font-size: 1rem;
@@ -484,11 +573,14 @@ article button {
         float: left;
         margin-top: 1em;
     }
+*/
 
 
 
 
 /* full size desktop versie*/
+
+/*
 @media screen and (min-width: 80em) {
     article {
         width: 25%;
@@ -511,3 +603,4 @@ article button {
         float: right;
     }
 }
+*/
