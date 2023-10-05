@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: AvenirMedium;
-    src: url(../fonts/Avenir-medium.ttf);
+    src: url("../fonts/Avenir-medium.ttf");
 }
 
 @font-face {
     font-family: AvenirBlack;
-    src: url(../fonts/Avenir\ -black.ttf);
+    src: url("../fonts/Avenir\ -black.ttf")
 }
 
 /* Custom properties */
@@ -353,59 +353,161 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
-/* css voor mijn uitleningen: mobiele versie */
+/* MOBIELE versie : mijn uitleningen */
 main{
     width: 90%;
     margin: 0 auto;
-
     /*background-color: green;*/
+    font-family: Avenirmedium;
 }
 
 main h1 {
-    margin-bottom: 1rem;
+    font-family: Avenirmedium;
+    font-size: 2rem;
+    /*margin-bottom: -3rem;*/
+}
+
+main h6 {
+    font-family: Avenirmedium;
+    margin-bottom: -3rem;
+    color:#707070;
 }
 
 article {
     /*background-color: yellow;*/
+    width: 90%;
+    margin: 0 auto;
+
+   display: grid;
+    grid-template-areas: 
+        "image image"
+        "title title"
+        "text text"
+        "date button"
+        "days button";
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-rows: 2fr 0.2fr 0.5fr 2.5rem 1.5rem;
 }
 
 article img {
-    width: 22rem;
+    width: 15rem;
     height: auto;
     display: block;
     margin: 0 auto;
-   
+    margin-top: 5rem;
+
+    grid-area: image;
 }
 
 article h3 {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    color:
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    grid-area: title;
 }
 
+article p {
+    /*color:#707070;
+    width: 29rem; 
+    height: 7rem;*/
+    grid-area: text
+    
+}
 article h4 {
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+
+    grid-area: date;
 }
 
 article h5 {
-    margin-bottom: 5rem;
+    color:#FF0000;
+
+    grid-area: days;
 }
 
-/* desktop versie*/
-@media screen and (min-width: 800px) {
+article button {
+    border-radius: 2rem;
+    border: none;
+    border-color: red;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem;
+    float: right;
+
+    grid-area: button;
+}
+
+
+
+/* mid-sized versie*/
+@media screen and (min-width: 45em) {
+    article{
+        width: 40%;
+    }
+
+    article:nth-of-type(1n){
+        float:left;
+    }
+
+    article:nth-of-type(2n){
+        float: right;
+    }
+
+    /*article:nth-of-type(3n){
+        float: right;*/
+    }
+
     article img {
-        width: 10rem;
+        width: 15rem;
         height: auto;
     }
+
     article h3 {
         font-size: 1rem;
+    }
+
+    article p {
+        color:#707070;
+        /*
+        width: 20rem; 
+        height: 10rem;
+        */
     }
 
     article h4 {
         font-size: 1rem;
     }
+
+    article button {
+        float: left;
+        margin-top: 1em;
+    }
+
+
+
+
+/* full size desktop versie*/
+@media screen and (min-width: 80em) {
+    article {
+        width: 25%;
+    }
+
+    article img {
+        width: 9rem;
+        height: auto;
+    }
+
+    article:nth-of-type(1n){
+        float:left;
+    }
+
+    article:nth-of-type(2n){
+        float:center;
+    }
+
+    article:nth-of-type(3n){
+        float: right;
+    }
 }
-
-
-
