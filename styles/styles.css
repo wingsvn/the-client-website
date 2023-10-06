@@ -479,7 +479,7 @@ article button {
 @media screen and (min-width: 55rem){
     article {
         background-color:;
-        width: 42%;
+        width: 45%;
         margin: 0 auto;
         display: grid;
         grid-template-areas: 
