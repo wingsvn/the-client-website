@@ -353,8 +353,10 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
-/* MOBIELE versie : mijn uitleningen */
-main{
+/* My part in this project */
+
+/* mobile version: mijn uitleningen */
+main {
     width: 90%;
     margin: 0 auto;
     /*background-color: green;*/
@@ -362,14 +364,14 @@ main{
 }
 
 main h1 {
-    font-family: Avenirmedium;
+    margin-left: 2rem;
     font-size: 2rem;
     /*margin-bottom: -3rem;*/
 }
 
 main h6 {
-    font-family: Avenirmedium;
-    margin-bottom: -3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
     color:#707070;
 }
 
@@ -377,6 +379,7 @@ article {
     /*background-color: yellow;*/
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 3rem;
     display: grid;
     grid-template-areas: 
         "image image"
@@ -384,8 +387,8 @@ article {
         "description description"
         "date button"
         "days button";
-    grid-template-columns: 5fr 0.5fr;
-    grid-template-rows: 2fr 0.2fr 0.5fr 2.5rem 1rem;
+    grid-template-columns: 1fr 7rem;
+    grid-template-rows: 3fr 0.2fr 0.5fr 2.2rem 1rem;
 }
 
 article img {
@@ -393,7 +396,7 @@ article img {
     height: auto;
     display: block;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 4rem;
     grid-area: image;
 }
 
@@ -421,64 +424,195 @@ article h5 {
 article button {
     border-radius: 2rem;
     border: none;
-    border-color: red;
     background-color: red;
     color: white;
     font-size: 1rem;
-    padding: 1rem;
     float: right;
     grid-area: button;
 }
 
+/* een knop om terug te gaan naar het account overzicht?*/
 
+/*
+button {
+    border-radius: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+} 
+*/
 
 /* mid-sized versie*/
-@media screen and (min-width:45em) {
+
+/* werken aan: inleverdatum + aantal dagen onder tekst*/
+@media screen and (min-width:38em) {
     article {
        /* background-color:pink; */
-        display: grid;
-        grid-template-areas: 
+       width: 90%;
+       margin: 0 auto;
+       margin-top: -3rem;
+       margin-bottom: 5rem;
+       font-size: 0.9rem;
+       display: grid;
+        /*grid-template-areas: 
         "image image title title"
         "image image description description"
         "date date date button"
         "days days days button";
         grid-template-columns: 1fr 0.5fr 1fr 7rem;
         grid-template-rows: 0.5fr 1fr 2.5rem 1rem;
+        */
+
+        /*grid-template-areas:
+        "image image title title"
+        "image image description description"
+        "image image date date"
+        "image image days days"
+        "image image button blank";
+        grid-template-columns: 1fr 0.8fr 8rem 1.2fr;
+        grid-template-rows: 0.1fr 1fr 3rem 2rem 3rem;
+        */
+
+        grid-template-areas:
+        "image image title title"
+        "image image description description"
+        "image image date date"
+        "image image blank button"
+        "image image days button";
+        grid-template-columns: 1fr 0.8fr 1.2fr 7rem;
+        grid-template-rows: 0.1fr 1fr 3rem 1rem 2rem;
+
+    }
+
+    article h6 {
+        margin-bottom: 2rem;
     }
 
     article image {
-        width: 1rem;
+        width: 10rem; 
         height: auto;
-        margin-top: 5rem;
         grid-area: image;
     }
 
     article h3 {
-        margin-top: 5rem;
-        margin-left: 0.5rem;
+        font-size: 1rem;
+        margin-top: 4.5rem;
+        margin-left: 1rem;
         grid-area: title;
     }
     
     article p {
-        margin-left: 0.5rem;
+        margin-left: 1rem; 
         grid-area: description;
     }
 
-    article h4{
+    article h4 {
         margin-top: 1rem;
+        margin-left: 0.5rem;
         grid-area: date;
     }
 
     article h5 {
+        margin-left: 0.5rem;
         grid-area: days;
+    }
+
+    article blank {
+        grid-area: blank;
     }
 }
 
+/*nog iets groter*/
 
-
-@media screen and (min-width: 55rem){
+@media screen and (min-width: 58rem){
     article {
-        background-color:;
+        background-color:lightblue;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: -3rem;
+        grid-template-areas: 
+        "image title title"
+        "image description description"
+        "date date button"
+        "days days button"
+        "days days blank";
+        grid-template-columns: 12rem 1fr 7rem;
+       /* grid-template-rows: 0.1fr 1fr 0.2fr 1rem 2rem; */
+        grid-template-rows: 0.5fr 1fr 2.5rem 0.2rem 1rem;
+    }
+
+    article h6 {
+        
+    }
+    article img {
+        width: 12rem;
+        height: auto;
+        /*display: block;
+        margin: 0 auto;*/
+        margin-top: 5.5rem;
+        margin-left: 0.5rem;
+        grid-area: image;
+    }
+
+    article h3 {
+        grid-area: title;
+        margin-top: 5rem;
+    }
+
+    article p {
+        grid-area: description;
+    }
+
+    article:nth-of-type(1n){
+        float:left;
+        margin: 1rem;
+    }
+
+    article:nth-of-type(2n){
+        float: right;
+    }
+}
+    /*full size desktop screen*/
+
+@media screen and (min-width: 82rem) {
+    article {
+        background-color: lightcoral;
+        width: 30%;
+        margin: 0 auto;
+        grid-template-areas: 
+        "image title title"
+        "image description description"
+        "date date button"
+        "days days button"
+        "days days blank";
+        grid-template-columns: 12rem 1fr 7rem;
+       /* grid-template-rows: 0.1fr 1fr 0.2fr 1rem 2rem; */
+        grid-template-rows: 0.5fr 1fr 2.5rem 0.2rem 1rem;
+    }
+
+    article image {
+        width: 12rem;
+    }
+
+    article:nth-of-type(1n){
+        float:left;
+    }
+
+    article:nth-of-type(2n){
+        float: center;
+    } 
+
+    article:nth-of-type(3n){
+        float: right;
+    }
+}
+
+    /*article {
+        background-color:lightblue;
         width: 45%;
         margin: 0 auto;
         display: grid;
@@ -530,6 +664,15 @@ article button {
     article:nth-of-type(2n){
         float: right;
     }
+}
+*/
+
+/* full size desktop screen */
+
+/*darkmode*/
+
+body.dark .home {
+    color: var(--text-color);
 }
 
 /*@media screen and (min-width: 45em) {
