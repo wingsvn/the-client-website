@@ -1,7 +1,7 @@
 /* Fonts being used by the oba */
 @font-face {
     font-family: AvenirRoman;
-    src: url(../fonts/Avenir-roman.ttf);
+    src: url("../fonts/Avenir-roman.ttf");
 }
 
 @font-face {
@@ -356,6 +356,16 @@ body.dark .home .text{
 /* My part in this project */
 
 /* mobile version: mijn uitleningen */
+
+.uitleningen {
+    margin-left: 2rem;
+    display: grid;
+    grid-template-areas: 
+    "user uitleningen"
+    "user aantal";
+    grid-template-columns: 5rem 1fr;
+    grid-template-rows: 3rem 1fr;
+}
 main {
     width: 90%;
     margin: 0 auto;
@@ -363,16 +373,25 @@ main {
     font-family: Avenirmedium;
 }
 
+.account {
+    grid-area: user;
+}
+
 main h1 {
-    margin-left: 2rem;
+    grid-area: uitleningen;
+    margin-left: 1rem;
     font-size: 2rem;
     /*margin-bottom: -3rem;*/
 }
 
 main h6 {
-    margin-left: 2rem;
+    grid-area: aantal;
+    margin-left: 1rem;
     margin-bottom: 2rem;
     color:#707070;
+}
+.articles {
+    display: block;
 }
 
 article {
@@ -396,7 +415,7 @@ article img {
     height: auto;
     display: block;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
     grid-area: image;
 }
 
@@ -431,31 +450,30 @@ article button {
     grid-area: button;
 }
 
-/* een knop om terug te gaan naar het account overzicht?*/
-
-/*
-button {
+/* een knop om terug te gaan naar het familie overzicht?*/
+.terug {
     border-radius: 2rem;
     border: none;
     background-color: black;
     color: white;
     font-size: 1rem;
     padding: 1rem 2rem;
-    margin-top: 2rem;
+    margin: 0 auto;
     margin-bottom: 2rem;
+    margin-left: 3rem;
+    position: absolute;
+    left: 30rem;
 } 
-*/
 
 /* mid-sized versie*/
 
-/* werken aan: inleverdatum + aantal dagen onder tekst*/
 @media screen and (min-width:38em) {
     article {
        /* background-color:pink; */
        width: 90%;
        margin: 0 auto;
-       margin-top: -3rem;
-       margin-bottom: 5rem;
+       margin-top: 2rem;
+       margin-bottom: 4rem;
        font-size: 0.9rem;
        display: grid;
         /*grid-template-areas: 
@@ -500,7 +518,7 @@ button {
 
     article h3 {
         font-size: 1rem;
-        margin-top: 4.5rem;
+        margin-top: 2rem;
         margin-left: 1rem;
         grid-area: title;
     }
@@ -528,12 +546,14 @@ button {
 
 /*nog iets groter*/
 
-@media screen and (min-width: 58rem){
+@media screen and (min-width: 57rem) {
     article {
-        background-color:lightblue;
+        /*background-color:lightblue;*/
         width: 45%;
         margin: 0 auto;
-        margin-top: -3rem;
+        margin-top: -4rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
         grid-template-areas: 
         "image title title"
         "image description description"
@@ -545,9 +565,7 @@ button {
         grid-template-rows: 0.5fr 1fr 2.5rem 0.2rem 1rem;
     }
 
-    article h6 {
-        
-    }
+
     article img {
         width: 12rem;
         height: auto;
@@ -567,22 +585,28 @@ button {
         grid-area: description;
     }
 
-    article:nth-of-type(1n){
+    /*article:nth-of-type(1n) {
         float:left;
         margin: 1rem;
     }
 
-    article:nth-of-type(2n){
+    article:nth-of-type(2n) {
         float: right;
+    }*/
+
+    .articles {
+        display: flex;
+        flex-flow: row wrap;
     }
 }
     /*full size desktop screen*/
 
-@media screen and (min-width: 82rem) {
+@media screen and (min-width: 78rem) {
     article {
-        background-color: lightcoral;
         width: 30%;
         margin: 0 auto;
+        margin-top: -3rem;
+        margin-bottom: 2rem;
         grid-template-areas: 
         "image title title"
         "image description description"
@@ -594,21 +618,13 @@ button {
         grid-template-rows: 0.5fr 1fr 2.5rem 0.2rem 1rem;
     }
 
-    article image {
-        width: 12rem;
+    .articles {
+        display: flex;
+        flex-flow: row wrap;
     }
+    
+    
 
-    article:nth-of-type(1n){
-        float:left;
-    }
-
-    article:nth-of-type(2n){
-        float: center;
-    } 
-
-    article:nth-of-type(3n){
-        float: right;
-    }
 }
 
     /*article {
