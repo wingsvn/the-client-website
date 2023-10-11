@@ -95,7 +95,7 @@ Voor dit project heb ik voor de opdrachtgever OBA binnen de mijn-OBA omgeving ee
 
 <img width="225" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/7ae641f2-c2d6-4b65-b31f-5d878662c00f">
 
-<img width="550" alt="OBA tablet version" src="https://github.com/wingsvn/the-client-website/assets/144009709/3c5058a1-d9d9-4594-b1de-f50a2d282702">
+<img width="500" alt="OBA tablet version" src="https://github.com/wingsvn/the-client-website/assets/144009709/3c5058a1-d9d9-4594-b1de-f50a2d282702">
 
 <img width="800" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/7b997d28-d85d-4912-8838-f05c4089910d">
 
