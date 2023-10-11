@@ -15,7 +15,7 @@ Voor dit project heb ik voor de opdrachtgever OBA binnen de mijn-OBA omgeving ee
 
 <img width="250" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/b248add9-e0bc-4aaa-a04b-29ddf2616d88" width=50% height=50%> 
 
-<img width="700" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/70951250-5ec7-49e9-9697-53d247d8bde5"
+<img width="700" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/70951250-5ec7-49e9-9697-53d247d8bde5">
 
 [(https://wingsvn.github.io/the-client-website/)]
 
