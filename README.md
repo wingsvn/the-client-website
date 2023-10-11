@@ -13,9 +13,9 @@ The client website: "mijn OBA: in te leveren boeken"
 ## Beschrijving
 Voor dit project heb ik voor de opdrachtgever OBA binnen de mijn-OBA omgeving een webpagina gemaakt waar je kunt zien welke boeken er geleend zijn en welke je binnenkort weer moet inleveren. Hierbij kun je terug gaan naar de familie overzichtspagina met de "terug" knop. Mijn pagina is een onderdeel van het familieoverzicht pagina. Ik ben begonnen met het opzetten van de mobiele versie. Vervolgens heb ik dit uitgewerkt naar de full-size desktop versie.
 
-<img width="562" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/b248add9-e0bc-4aaa-a04b-29ddf2616d88" width=50% height=50%> 
+<img width="250" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/b248add9-e0bc-4aaa-a04b-29ddf2616d88" width=50% height=50%> 
 
-<img width="1452" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/70951250-5ec7-49e9-9697-53d247d8bde5" width=50% height=50%>
+<img width="700" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/70951250-5ec7-49e9-9697-53d247d8bde5"
 
 [(https://wingsvn.github.io/the-client-website/)]
 
