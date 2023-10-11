@@ -99,8 +99,8 @@ Voor dit project heb ik voor de opdrachtgever OBA binnen de mijn-OBA omgeving ee
 
 <img width="800" alt="OBA desktop version" src="https://github.com/wingsvn/the-client-website/assets/144009709/7b997d28-d85d-4912-8838-f05c4089910d">
 
-
-https://wingsvn.github.io/the-client-website/
+Hieronder vindt je de link van mijn website.
+[https://wingsvn.github.io/the-client-website/](https://wingsvn.github.io/the-client-website/uitleningen.html)
 
 
 ## Kenmerken
