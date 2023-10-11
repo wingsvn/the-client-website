@@ -479,7 +479,6 @@ article button {
         "image image days button";
         grid-template-columns: 1fr 0.8fr 1.2fr 7rem;
         grid-template-rows: 0.1fr 1fr 3rem 1rem 2rem;
-
     }
 
     article h6 {
