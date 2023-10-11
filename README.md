@@ -93,7 +93,7 @@ Voor de opdrachtgever OBA heb ik een "in te leveren boeken" pagina gemaakt dat o
 
 Voor dit project heb ik voor de opdrachtgever OBA binnen de mijn-OBA omgeving een webpagina voor "Mijn uitleningen" gebouwd vanuit een eerder ontwerp van een tweedejaarsstudent. Op de "mijn uitleningen" pagina waar ik aan heb gewerkt zie je welke boeken er zijn geleend en je binnenkort weer moet inleveren. Ook zie je hoeveel dagen je nog over hebt om je boeken in te leveren en is er de mogelijkheid om te verlengen. Onder aan de pagina vind je een "terug" knop, deze knop brengt je terug naar de familie overzichtpagina. Ik ben begonnen met het opzetten van de mobiele versie. Vervolgens heb ik dit uitgewerkt naar de full-size desktop versie.
 
-<img width="300" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/7ae641f2-c2d6-4b65-b31f-5d878662c00f">
+<img width="285" alt="OBA mobile version" src="https://github.com/wingsvn/the-client-website/assets/144009709/7ae641f2-c2d6-4b65-b31f-5d878662c00f">
 
 <img width="500" alt="OBA tablet version" src="https://github.com/wingsvn/the-client-website/assets/144009709/3c5058a1-d9d9-4594-b1de-f50a2d282702">
 
