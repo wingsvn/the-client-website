@@ -455,7 +455,6 @@ article button:hover {
 article button:active {
     background-color: white;
     color: black;
-    transform: translateY (4px);
 }
 
 .terug {
@@ -468,9 +467,8 @@ article button:active {
     margin: 0 auto;
     margin-bottom: 2rem;
     margin-left: 3rem;
-    /*position: absolute;
-    left: 30rem;*/
 } 
+
 .terug:hover {
     background-color: white;
     color: black;
