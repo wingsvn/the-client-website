@@ -107,7 +107,7 @@ https://wingsvn.github.io/the-client-website/
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-In mijn HTML zit elk boek en zijn gegevens in de container "<article>". Hiermee kan ik alles makkelijk dezelfde stijling geven in CSS.
+In mijn HTML zit elk boek en zijn gegevens in de container "article". Hiermee kan ik alles makkelijk dezelfde stijling geven in CSS.
 De vraag vanuit de opdrachtgever was om mobiel te beginnen. Om de layout vervolgens aan te passen naar verschillende bredere screensizes heb ik mediaquery gebruikt.
 Verder heb ik CSS grid gebruikt voor het indelen van de elementen binnen de artikelen. En om de artikelen (boeken) naast elkaar te zetten, heb ik CSS flex gebruikt.
 
